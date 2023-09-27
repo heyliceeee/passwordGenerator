@@ -3,12 +3,23 @@ import { View, Text, StyleSheet, Image, TouchableOpacity } from 'react-native'
 import Slider from '@react-native-community/slider'
 
 
+let charset = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!#$%&'()*+,-./:;<=>?@[\]^_`{|}~";
+
+
 export default function App(){
   const [size, setSize] = useState(10); //tamanho de caracteres
+  const [passwordValue, setPasswordvalue] = useState("");
 
   //gerar password
   function generatePassword(){
-    console.log("clickkkk");
+    let password = "";
+
+    for(let i=0, n=charset.length; i < size; i++){
+      //buscar uma letra random baseado no tamanho de caracteres (slider)
+      password += charset.charAt(Math.floor(Math.random() * n)); //concatenar e colocar um caracter random de 0 até charset.length
+    }
+
+    setPasswordvalue(password); //password gerada
   }
 
 
