@@ -30,8 +30,22 @@ const useStorage = () => {
     };
 
     //remover um password no storage
-    const removeItem = async() => {
+    const removeItem = async(key, item) => {
+        try {
+            let passwords = await getItem(key); //obter todas as passwords
+            
+            //remover a password selecionada
+            let myPasswords = passwords.filter((password) => {
+                return (password !== item);
+            });
 
+            await AsynscStorage.setItem(key, JSON.stringify(myPasswords)); //atualizar o use storage
+
+            return myPasswords;
+
+        } catch(err){
+            console.log("error when removing: ", err);
+        }
     };
 
     return {
