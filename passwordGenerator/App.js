@@ -1,6 +1,8 @@
 import { useState } from 'react';
-import { View, Text, StyleSheet, Image, TouchableOpacity } from 'react-native'
+import { View, Text, StyleSheet, Image, TouchableOpacity, Modal } from 'react-native'
 import Slider from '@react-native-community/slider'
+
+import { ModalPassword } from './src/components/modal';
 
 
 let charset = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!#$%&'()*+,-./:;<=>?@[\]^_`{|}~";
@@ -9,6 +11,7 @@ let charset = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!#$
 export default function App(){
   const [size, setSize] = useState(10); //tamanho de caracteres
   const [passwordValue, setPasswordvalue] = useState("");
+  const [modalVisible, setModalVisible] = useState(false);
 
   //gerar password
   function generatePassword(){
@@ -20,6 +23,7 @@ export default function App(){
     }
 
     setPasswordvalue(password); //password gerada
+    setModalVisible(true); //abrir modal
   }
 
 
@@ -39,6 +43,10 @@ export default function App(){
       <TouchableOpacity style={styles.btn} onPress={generatePassword}>
         <Text style={styles.btnText}>Generate password</Text>
       </TouchableOpacity>
+
+      <Modal visible={modalVisible} animationType='fade' transparent={true}>
+        <ModalPassword />
+      </Modal>
     </View>
   );
 }
