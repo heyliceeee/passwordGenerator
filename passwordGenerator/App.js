@@ -45,7 +45,9 @@ export default function App(){
       </TouchableOpacity>
 
       <Modal visible={modalVisible} animationType='fade' transparent={true}>
-        <ModalPassword />
+        <ModalPassword password={passwordValue} 
+          handleClose={ () => setModalVisible(false) }
+        />
       </Modal>
     </View>
   );
