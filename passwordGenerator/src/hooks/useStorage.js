@@ -16,8 +16,17 @@ const useStorage = () => {
     };
 
     //guardar um password no storage
-    const saveItem = async() => {
+    const saveItem = async(key, value) => {
+        try {
+            let passwords = await getItem(key); //obter todas as passwords
 
+            passwords.push(value); //acrescentar a nova password ás existentes
+
+            await AsynscStorage.setItem(key, JSON.stringify(passwords)); //guardar na use storage
+
+        } catch(err){
+            console.log("error when saving: ", err);
+        }
     };
 
     //remover um password no storage
