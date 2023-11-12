@@ -10,53 +10,53 @@
 - React Navigation (bottom tabs)
 
 
-## Objetivo
-O objectivo da aplicação mobile é proporcionar uma ferramenta segura e eficaz para a geração de palavras-passe. 
+## Goal
+The objective of the mobile application is to provide a safe and effective tool for generating passwords.
 
-A app permite que os utilizadores gerem palavras-passe aleatórias e sólidas, copiem-nas directamente para a área de transferência e as armazenem para acesso futuro. 
+The app allows users to generate random and strong passwords, copy them directly to the clipboard and store them for future access.
 
-Desta forma, os utilizadores podem facilmente gerar, copiar e recuperar palavras-passe sempre que necessário.
+This way, users can easily generate, copy and recover passwords whenever necessary.
 
 
 ## Mockups
-### Página Inicial
-A página inicial da aplicação mobile apresenta uma interface intuitiva onde os utilizadores têm à sua disposição um slider. 
+### HomePage
+The homepage of the mobile application presents an intuitive interface where users have a slider at their disposal.
 
-Através deste slider, é possível selecionar a quantidade de caracteres desejada para a palavra-passe, variando entre 6 a 20 caracteres. 
+Using this slider, it is possible to select the desired number of characters for the password, ranging from 6 to 20 characters.
 
-Deste modo, os utilizadores podem personalizar facilmente o comprimento da palavra-passe que a app irá gerar para eles.
+This way, users can easily customize the length of the password that the app will generate for them.
 
 iOS             |  Android
 :-------------------------:|:-------------------------:
 [<img src="/passwordGenerator/assets/mockupsIOS/homepage.PNG" width="1000" />](/passwordGenerator/assets/mockupsIOS/homepage.PNG) | [<img src="/passwordGenerator/assets/mockupsAndroid/homepage.png" width="1000" />](/passwordGenerator/assets/mockupsAndroid/homepage.png)
 
 
-### Gerar palavra-passe
-Na página 'gerar palavra-passe', que se apresenta como um modal na aplicação móvel, os utilizadores têm à disposição uma caixa de texto preta onde é exibida a palavra-passe gerada. 
+### Generate password
+On the 'generate password' page, which appears as a modal in the mobile application, users have a black text box available where the generated password is displayed.
 
-Para copiar a palavra-passe para a área de transferência, basta realizar um pressionamento longo sobre esta caixa. 
+To copy the password to the clipboard, simply long press this box.
 
-Adicionalmente, os utilizadores têm a opção de guardar a palavra-passe, adicionando-a à lista de palavras-passe anteriormente guardadas.
+Additionally, users have the option to save their password by adding it to the list of previously saved passwords.
 
 iOS             |  Android
 :-------------------------:|:-------------------------:
 [<img src="/passwordGenerator/assets/mockupsIOS/generatedPassword.PNG" width="1000" />](/passwordGenerator/assets/mockupsIOS/generatedPassword.PNG) | [<img src="/passwordGenerator/assets/mockupsAndroid/generatedPassword.png" width="1000" />](/passwordGenerator/assets/mockupsAndroid/generatedPassword.png)
 
 
-### Alerta
-Após a acção de copiar ou guardar a palavra-passe, a aplicação móvel exibe um alerta ao utilizador. 
+### Alert
+After copying or saving the password, the mobile application displays an alert to the user.
 
-Este alerta serve para confirmar e informar que a sua acção foi executada com êxito, garantindo ao utilizador que a palavra-passe foi processada conforme o desejado.
+This alert serves to confirm and inform that your action was carried out successfully, ensuring the user that the password was processed as desired.
 
 iOS             |  Android
 :-------------------------:|:-------------------------:
 [<img src="/passwordGenerator/assets/mockupsIOS/alert.PNG" width="1000" />](/passwordGenerator/assets/mockupsIOS/alert.PNG) | [<img src="/passwordGenerator/assets/mockupsAndroid/alert.png" width="1000" />](/passwordGenerator/assets/mockupsAndroid/alert.png)
 
 
-### Minhas palavras-passe
-Na página 'Minhas Palavras-Passe', os utilizadores podem visualizar todas as palavras-passe que previamente decidiram guardar, sempre que pressionaram o botão 'Guardar Palavra-Passe'. 
+### My Passwords
+On the 'My Passwords' page, users can view all the passwords that they previously decided to save, whenever they pressed the 'Save Password' button.
 
-Para além disso, oferece a funcionalidade de eliminar uma palavra-passe específica: basta pressionar de forma prolongada sobre a caixa preta correspondente à palavra-passe desejada.
+Furthermore, it offers the functionality to delete a specific password: simply press and hold on the black box corresponding to the desired password.
 
 iOS             |  Android
 :-------------------------:|:-------------------------:
